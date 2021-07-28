@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unauthorized Access:: Python Flask Bucket List App</title>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/3.4/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/jumbotron-narrow.css">
+</head>
+<body>
+    {% include "includes/messages.html" %}
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="/">Home</a></li>
+                    <li role="presentation" class="active"><a href="/showSignIn">Sign In</a></li>
+                    <li role="presentation" class="active"><a href="/showSignUp">Sign Up</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Python Flask App</h3>
+        </div>
+        <div class="jumbotron">
+            <h1>{{error}}</h1>
+        </div>
+        <footer clas ="footer">
+            <p>&copy;Devsoft 2021</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

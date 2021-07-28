@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python Flask Bucket List App</title>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/3.4/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/jumbotron-narrow.css">
+    <link rel="stylesheet" href="../static/signin.css">
+    <script src="../static/js/jquery-1.11.2.js"></script>
+</head>
+<body>
+    {% include "includes/messages.html" %}
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="/">Home</a></li>
+                    <li role="presentation" class="active"><a href="">Sign In</a></li>
+                    <li role="presentation"><a href="signup">Sign Up</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Python Flask App</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h1>Bucket List App</h1>
+            <form class="form-signin" action="/validateLogin" method="POST">
+            <label for="inputEmail" class = "sr-only">Email address</label>
+            <input type="email" name="inputEmail" id="inputEmail" class = "form-control" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class = "sr-only">Password</label>
+            <input type="password" name ="inputPassword" id="inputPassword" class="form-control" placeholder="Password">
+
+            <button id="btnSingIn" class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+            </form>
+        </div>
+        
+        <footer clas ="footer">
+            <p>&copy;Devsoft 2021</p>
+        </footer>
+    </div>
+</body>
+</html>
